@@ -1,0 +1,145 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1618277823.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "OrgUnitLevel1",
+    "OrgUnitLevel2",
+    "OrgUnitLevel3",
+    "OtherCol"
+  ],
+  "properties": {
+    "OrgUnitLevel1": {
+      "$id": "#root/OrgUnitLevel1",
+      "title": "Orgunitlevel1",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "level1.1"
+      ],
+      "pattern": "^.*$"
+    },
+    "OrgUnitLevel2": {
+      "$id": "#root/OrgUnitLevel2",
+      "title": "Orgunitlevel2",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "level1.2"
+      ],
+      "pattern": "^.*$"
+    },
+    "OrgUnitLevel3": {
+      "$id": "#root/OrgUnitLevel3",
+      "title": "Orgunitlevel3",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "level1.3"
+      ],
+      "pattern": "^.*$"
+    },
+    "OtherCol": {
+      "$id": "#root/OtherCol",
+      "title": "Othercol",
+      "type": "array",
+      "default": [],
+      "items":{
+        "$id": "#root/OtherCol/items",
+        "title": "Items",
+        "type": "object",
+        "required": [
+          "summaryIterm1",
+          "summaryIterm2",
+          "summaryIterm3",
+          "summaryIterm4",
+          "InsideObj"
+        ],
+        "properties": {
+          "summaryIterm1": {
+            "$id": "#root/OtherCol/items/summaryIterm1",
+            "title": "Summaryiterm1",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "summary1.1"
+            ],
+            "pattern": "^.*$"
+          },
+          "summaryIterm2": {
+            "$id": "#root/OtherCol/items/summaryIterm2",
+            "title": "Summaryiterm2",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "summary1.2"
+            ],
+            "pattern": "^.*$"
+          },
+          "summaryIterm3": {
+            "$id": "#root/OtherCol/items/summaryIterm3",
+            "title": "Summaryiterm3",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "summary1.3"
+            ],
+            "pattern": "^.*$"
+          },
+          "summaryIterm4": {
+            "$id": "#root/OtherCol/items/summaryIterm4",
+            "title": "Summaryiterm4",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "summary1.4"
+            ],
+            "pattern": "^.*$"
+          },
+          "InsideObj": {
+            "$id": "#root/OtherCol/items/InsideObj",
+            "title": "Insideobj",
+            "type": "array",
+            "default": [],
+            "items":{
+              "$id": "#root/OtherCol/items/InsideObj/items",
+              "title": "Items",
+              "type": "object",
+              "required": [
+                "item1",
+                "item2"
+              ],
+              "properties": {
+                "item1": {
+                  "$id": "#root/OtherCol/items/InsideObj/items/item1",
+                  "title": "Item1",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "item1"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "item2": {
+                  "$id": "#root/OtherCol/items/InsideObj/items/item2",
+                  "title": "Item2",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "item2"
+                  ],
+                  "pattern": "^.*$"
+                }
+              }
+            }
+
+          }
+        }
+      }
+
+    }
+  }
+}
+
